@@ -27,7 +27,7 @@ class QuestionTableViewController: UITableViewController {
         let q1 = Question(question: "What is the capital of Georgia?", answer: "Atlanta")
         self.questionArray.append(q1)
         
-        let q2 = Question(question: "Where to the Georgia Bulldogs play?", answer: "Sanford Stadium")
+        let q2 = Question(question: "Where do the Georgia Bulldogs play?", answer: "Sanford Stadium")
         self.questionArray.append(q2)
         
         let q3 = Question(question: "Who helped found Apple?", answer: "Steve Wozniack")
@@ -66,28 +66,29 @@ class QuestionTableViewController: UITableViewController {
         
         cell.textLabel?.text = currentQuestion?.questionString
         
+        
         // Configure the cell...
 
         return cell
     }
  
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        self.currentQuestion = self.questionArray[indexPath.row]
         
+        self.currentQuestion = self.questionArray[indexPath.row]
         performSegueWithIdentifier("AnswerSegue", sender: nil)
         
     }
+    
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "AnswerSegue" {
             
             if let controller = segue.destinationViewController as? AnswerViewController {
-
                 controller.passedQuestion = self.currentQuestion
             }
             
         } else {
-            print("Your segue identifere is incorrect")
+            print("Your segue identifier is incorrect")
         }
     }
 

@@ -12,10 +12,14 @@ class AnswerViewController: UIViewController {
 
     var passedQuestion : Question?
     
+    @IBOutlet weak var questionLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        if let pQ = self.passedQuestion {
+            self.questionLabel.text = pQ.questionString
+        }
     
     
     }
