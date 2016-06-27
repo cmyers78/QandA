@@ -81,7 +81,10 @@ class QuestionTableViewController: UITableViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "AnswerSegue" {
             
-            
+            if let controller = segue.destinationViewController as? AnswerViewController {
+
+                controller.passedQuestion = self.currentQuestion
+            }
             
         } else {
             print("Your segue identifere is incorrect")

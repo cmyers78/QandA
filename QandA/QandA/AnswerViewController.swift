@@ -10,10 +10,12 @@ import UIKit
 
 class AnswerViewController: UIViewController {
 
+    var passedQuestion : Question?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-    
+        
     
     
     }
