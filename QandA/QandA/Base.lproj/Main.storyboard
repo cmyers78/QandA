@@ -65,14 +65,23 @@
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fe8-6P-Vly">
                                 <rect key="frame" x="273" y="276" width="55" height="30"/>
                                 <state key="normal" title="Button2"/>
+                                <connections>
+                                    <action selector="answer2Pressed:" destination="rU2-5S-BYC" eventType="touchUpInside" id="KWI-eu-Qbb"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l5u-YT-el8">
                                 <rect key="frame" x="273" y="370" width="55" height="30"/>
                                 <state key="normal" title="Button3"/>
+                                <connections>
+                                    <action selector="answer3Pressed:" destination="rU2-5S-BYC" eventType="touchUpInside" id="Ka8-ud-xd8"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Pj-Xm-eoK">
                                 <rect key="frame" x="272" y="451" width="56" height="30"/>
                                 <state key="normal" title="Button4"/>
+                                <connections>
+                                    <action selector="answer4Pressed:" destination="rU2-5S-BYC" eventType="touchUpInside" id="sfY-Nu-S5B"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

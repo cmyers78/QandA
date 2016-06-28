@@ -29,6 +29,10 @@ class AnswerViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        print(random)
+        
+        self.logic()
     
     }
     
@@ -86,15 +90,15 @@ class AnswerViewController: UIViewController {
     
     }
     
-    func checkAnswer() {
+    func correctAnswer() {
         
         // Create an instance of the UIAlertController class - style .Alert
         
-        let alert = UIAlertController(title: "Add Name", message: "Add a new name", preferredStyle: .Alert)
+        let alert = UIAlertController(title: "Correct!", message: "You are correct!", preferredStyle: .Alert)
         
         // Create an action called "Save"
         
-        let correctAction = UIAlertAction(title: "Correct!",
+        let correctAction = UIAlertAction(title: "Continue",
                                           style: .Default) {
                                             (action) in
         }
@@ -102,24 +106,66 @@ class AnswerViewController: UIViewController {
         
         // Add the action to the alert instance
         alert.addAction(correctAction)
+
+        // Present the alert using presentViewController
+        self.presentViewController(alert, animated: true, completion: nil)
+    }
+    
+    func incorrectAnswer() {
         
-        // Create an action called Cancel
+        // Create an instance of the UIAlertController class - style .Alert
         
-        let cancelAction = UIAlertAction(title: "Cancel",
-                                         style: .Default) {
+        let alert = UIAlertController(title: "INCORRECT!", message: "You are NOT correct!", preferredStyle: .Alert)
+        
+        // Create an action called "Save"
+        
+        let incorrectAction = UIAlertAction(title: "Continue",
+                                          style: .Default) {
                                             (action) in
         }
         
-        // Add the cancel action
-        alert.addAction(cancelAction)
+        
+        // Add the action to the alert instance
+        alert.addAction(incorrectAction)
         
         // Present the alert using presentViewController
         self.presentViewController(alert, animated: true, completion: nil)
     }
 
+
     @IBAction func Answer1Pressed(sender: UIButton) {
+        if random == 1 {
+        self.correctAnswer()
         
+        } else {
+            self.incorrectAnswer()
+        }
         
     }
     
+    @IBAction func answer2Pressed(sender: UIButton) {
+        if random == 2 {
+            self.correctAnswer()
+        } else {
+            self.incorrectAnswer()
+        }
+    }
+    
+    @IBAction func answer3Pressed(sender: UIButton) {
+        if random == 3 {
+            self.correctAnswer()
+        } else {
+            self.incorrectAnswer()
+        }
+    }
+    
+    @IBAction func answer4Pressed(sender: UIButton) {
+        if random == 4 {
+            self.correctAnswer()
+        } else {
+            self.incorrectAnswer()
+        }
+    }
+    
 }
+
