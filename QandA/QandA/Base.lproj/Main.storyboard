@@ -91,6 +91,9 @@
                     </view>
                     <connections>
                         <outlet property="answer1Outlet" destination="DUT-rV-cPs" id="WZJ-xq-jd3"/>
+                        <outlet property="answer2Outlet" destination="Fe8-6P-Vly" id="ZFq-m7-CRP"/>
+                        <outlet property="answer3Outlet" destination="l5u-YT-el8" id="ISf-lD-Wk0"/>
+                        <outlet property="answer4Outlet" destination="7Pj-Xm-eoK" id="3DS-Tz-rr8"/>
                         <outlet property="questionLabel" destination="qck-T3-ki6" id="fF8-Bl-Qxc"/>
                     </connections>
                 </viewController>

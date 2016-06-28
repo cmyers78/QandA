@@ -18,6 +18,12 @@ class AnswerViewController: UIViewController {
     
     @IBOutlet weak var answer1Outlet: UIButton!
     
+    @IBOutlet weak var answer2Outlet: UIButton!
+    
+    @IBOutlet weak var answer3Outlet: UIButton!
+    
+    @IBOutlet weak var answer4Outlet: UIButton!
+    
     
     @IBOutlet weak var questionLabel: UILabel!
     
@@ -29,7 +35,21 @@ class AnswerViewController: UIViewController {
             self.questionLabel.text = pQ.questionString
             self.answer1Outlet.setTitle(pQ.answerString, forState: .Normal)
             
+            //Int(arc4random_uniform(UInt32(answerArray.count)))
+            
+            
+            self.answer2Outlet.setTitle(answerArray[Int(arc4random_uniform(UInt32(answerArray.count)))], forState: .Normal)
+            
+            self.answer3Outlet.setTitle(answerArray[Int(arc4random_uniform(UInt32(answerArray.count)))], forState: .Normal)
+            
+            self.answer4Outlet.setTitle(answerArray[Int(arc4random_uniform(UInt32(answerArray.count)))], forState: .Normal)
+            
+            
+            
+            
         }
+        
+        
         
         
     
