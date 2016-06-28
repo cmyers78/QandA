@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C687455D1D2230190006450E /* QuestionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C687455C1D2230190006450E /* QuestionTableViewCell.swift */; };
 		C6C62C451D21C8A100894F58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C62C441D21C8A100894F58 /* AppDelegate.swift */; };
 		C6C62C4A1D21C8A100894F58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6C62C481D21C8A100894F58 /* Main.storyboard */; };
 		C6C62C4C1D21C8A100894F58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6C62C4B1D21C8A100894F58 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C687455C1D2230190006450E /* QuestionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionTableViewCell.swift; sourceTree = "<group>"; };
 		C6C62C411D21C8A100894F58 /* QandA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QandA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6C62C441D21C8A100894F58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6C62C491D21C8A100894F58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				C6C62C5D1D21D02900894F58 /* Model */,
 				C6C62C5C1D21D01E00894F58 /* Controllers */,
 				C6C62C481D21C8A100894F58 /* Main.storyboard */,
+				C687455C1D2230190006450E /* QuestionTableViewCell.swift */,
 				C6C62C4B1D21C8A100894F58 /* Assets.xcassets */,
 				C6C62C4D1D21C8A100894F58 /* LaunchScreen.storyboard */,
 				C6C62C501D21C8A100894F58 /* Info.plist */,
@@ -158,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6C62C5B1D21D01500894F58 /* AnswerViewController.swift in Sources */,
+				C687455D1D2230190006450E /* QuestionTableViewCell.swift in Sources */,
 				C6C62C571D21C9F200894F58 /* Question.swift in Sources */,
 				C6C62C591D21CB2000894F58 /* QuestionTableViewController.swift in Sources */,
 				C6C62C451D21C8A100894F58 /* AppDelegate.swift in Sources */,
@@ -310,6 +314,7 @@
 				C6C62C551D21C8A100894F58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

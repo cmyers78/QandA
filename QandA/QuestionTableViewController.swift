@@ -60,11 +60,11 @@ class QuestionTableViewController: UITableViewController {
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! QuestionTableViewCell
         
         self.currentQuestion = self.questionArray[indexPath.row]
         
-        cell.textLabel?.text = currentQuestion?.questionString
+        cell.questionLabel.text = currentQuestion?.questionString
         
         
         // Configure the cell...
