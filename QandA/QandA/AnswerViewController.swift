@@ -30,22 +30,55 @@ class AnswerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     
-
+    }
+    
+    func logic() {
         if let pQ = self.passedQuestion {
+            
             self.questionLabel.text = pQ.questionString
-            self.answer1Outlet.setTitle(pQ.answerString, forState: .Normal)
             
-            //Int(arc4random_uniform(UInt32(answerArray.count)))
+            if random == 1 {
+                self.answer1Outlet.setTitle(pQ.answerString, forState: .Normal)
+                
+                self.answer2Outlet.setTitle(answerArray[Int(arc4random_uniform(UInt32(answerArray.count)))], forState: .Normal)
+                
+                self.answer3Outlet.setTitle(answerArray[Int(arc4random_uniform(UInt32(answerArray.count)))], forState: .Normal)
+                
+                self.answer4Outlet.setTitle(answerArray[Int(arc4random_uniform(UInt32(answerArray.count)))], forState: .Normal)
+
+            }
             
+            else if random == 2 {
+                self.answer2Outlet.setTitle(pQ.answerString, forState: .Normal)
+                
+                self.answer1Outlet.setTitle(answerArray[Int(arc4random_uniform(UInt32(answerArray.count)))], forState: .Normal)
+                
+                self.answer3Outlet.setTitle(answerArray[Int(arc4random_uniform(UInt32(answerArray.count)))], forState: .Normal)
+                
+                self.answer4Outlet.setTitle(answerArray[Int(arc4random_uniform(UInt32(answerArray.count)))], forState: .Normal)
+
+            }
             
-            self.answer2Outlet.setTitle(answerArray[Int(arc4random_uniform(UInt32(answerArray.count)))], forState: .Normal)
+            else if random == 3 {
+                self.answer3Outlet.setTitle(pQ.answerString, forState: .Normal)
+                
+                self.answer1Outlet.setTitle(answerArray[Int(arc4random_uniform(UInt32(answerArray.count)))], forState: .Normal)
+                
+                self.answer2Outlet.setTitle(answerArray[Int(arc4random_uniform(UInt32(answerArray.count)))], forState: .Normal)
+                
+                self.answer4Outlet.setTitle(answerArray[Int(arc4random_uniform(UInt32(answerArray.count)))], forState: .Normal)
+
+            }
             
-            self.answer3Outlet.setTitle(answerArray[Int(arc4random_uniform(UInt32(answerArray.count)))], forState: .Normal)
-            
-            self.answer4Outlet.setTitle(answerArray[Int(arc4random_uniform(UInt32(answerArray.count)))], forState: .Normal)
-            
-            
-            
+            else {
+                self.answer4Outlet.setTitle(pQ.answerString, forState: .Normal)
+                
+                self.answer1Outlet.setTitle(answerArray[Int(arc4random_uniform(UInt32(answerArray.count)))], forState: .Normal)
+                
+                self.answer2Outlet.setTitle(answerArray[Int(arc4random_uniform(UInt32(answerArray.count)))], forState: .Normal)
+                
+                self.answer3Outlet.setTitle(answerArray[Int(arc4random_uniform(UInt32(answerArray.count)))], forState: .Normal)
+            }
             
         }
         
