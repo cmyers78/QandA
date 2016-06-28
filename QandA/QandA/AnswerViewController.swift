@@ -82,14 +82,44 @@ class AnswerViewController: UIViewController {
             
         }
         
-        
-        
-        
     
     
     }
+    
+    func checkAnswer() {
+        
+        // Create an instance of the UIAlertController class - style .Alert
+        
+        let alert = UIAlertController(title: "Add Name", message: "Add a new name", preferredStyle: .Alert)
+        
+        // Create an action called "Save"
+        
+        let correctAction = UIAlertAction(title: "Correct!",
+                                          style: .Default) {
+                                            (action) in
+        }
+
+        
+        // Add the action to the alert instance
+        alert.addAction(correctAction)
+        
+        // Create an action called Cancel
+        
+        let cancelAction = UIAlertAction(title: "Cancel",
+                                         style: .Default) {
+                                            (action) in
+        }
+        
+        // Add the cancel action
+        alert.addAction(cancelAction)
+        
+        // Present the alert using presentViewController
+        self.presentViewController(alert, animated: true, completion: nil)
+    }
 
     @IBAction func Answer1Pressed(sender: UIButton) {
+        
+        
     }
     
 }
